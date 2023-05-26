@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --inspect src/index.js",
+    "beautiful": "lint-staged",
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/"
   },
   "repository": {
@@ -23,11 +24,21 @@
   "homepage": "https://github.com/manhlam113/NodeJs#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "mongoose": "^7.2.1",
     "node-sass": "^9.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width --write src/**/*.{js,json,scss}"
+  },
+  "hooks": {
+    "pre-commit": "lint-staged"
   },
   "devDependencies": {
     "express-handlebars": "^7.0.7",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
   }
 }
