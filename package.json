@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manhlam113/NodeJs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "manhlam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manhlam113/NodeJs/issues"
+  },
+  "homepage": "https://github.com/manhlam113/NodeJs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
